@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0; }
+
+header .gridContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 5vw; }
+
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo .logotype {
+    width: 75px;
+    display: flex;
+    height: 10px;
+    justify-content: space-between;
+    background: #ffffff; }
+    .logo .logotype:before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 10px;
+      background: #009a3d; }
+    .logo .logotype:after {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 10px;
+      background: #e70015; }
+  .logo h1 {
+    padding-left: 15px; }
+
+.list {
+  padding: 0; }
+  .list li {
+    list-style-type: none;
+    padding: 0 3px; }
+    .list li a {
+      font-family: 'Trebuchet MS';
+      color: #cccccc;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 20px;
+      text-decoration: none; }
+      .list li a:hover {
+        color: #91111c;
+        text-decoration: underline; }
+
+@media screen and (min-width: 768px) {
+  header .gridContainer {
+    display: flex;
+    justify-content: space-between; }
+  .list li {
+    display: inline-block; } }
+
+@media screen and (min-width: 1170px) {
+  header .gridContainer {
+    width: 1170px;
+    padding: 35px 20px; } }
+
+main .gridContainer {
+  margin: 0 auto;
+  padding: 0 5vw; }
+
+h2 {
+  font-family: 'Trebuchet MS';
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0; }
+
+p {
+  font-family: PTSerif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; }
+
+.shelf {
+  border-top: .1rem solid #e0e0e0;
+  border-bottom: .1rem solid #e0e0e0; }
+
+.brands a {
+  font-family: PTSerif;
+  color: #be4e61;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0 5px;
+  text-decoration: none; }
+
+@media screen and (min-width: 1170px) {
+  main .gridContainer {
+    width: 1170px;
+    padding: 0 50px; }
+  .regnoItaly {
+    width: 60%;
+    padding: 0 0 60px; }
+  .brands {
+    width: calc(50% - 65px); }
+  .block {
+    display: flex;
+    justify-content: space-between; }
+    .block .shelf {
+      margin: 0;
+      padding: 40px 0; }
+    .block .about {
+      width: calc(50% - 65px); }
+      .block .about h2 {
+        padding: 30px 0; }
+    .block .brands {
+      height: 400px;
+      width: calc(50% - 65px);
+      padding: 35px;
+      border: .4rem solid #e1cd92; }
+      .block .brands h2 {
+        padding-bottom: 50px;
+        border-bottom: .4rem solid #e1cd92; }
+      .block .brands a {
+        border-bottom: .3rem solid #000;
+        margin: 0 5px 3px; } }
+
+.slider .gridContainer {
+  width: 100%;
+  padding: 0 5vw; }
+
+.girl {
+  background-image: url(../assets/img/slide.jpg);
+  background-size: cover;
+  padding: 80px 0 100px;
+  text-align: center; }
+  .girl h1 {
+    font-family: 'Trebuchet MS';
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 10px 0; }
+  .girl h2 {
+    font-family: 'Trebuchet MS';
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px; }
+  .girl p {
+    font-family: 'Trebuchet MS';
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; }
+
+@media screen and (min-width: 1170px) {
+  .slider .gridContainer {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 0 50px; } }
